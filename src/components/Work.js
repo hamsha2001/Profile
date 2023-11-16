@@ -15,7 +15,7 @@ const Work = () => {
   <section className='section' id='work'>
     <div className="container mx-auto">
       <div>
-       <div>
+       <div className='flex-1 flex  flex-col gap-y-12 mb-10 lg:mb-0'>
         {/* text */}
         <div>
           <h2 className='h2 leading-tight text-accent'>
@@ -31,11 +31,11 @@ const Work = () => {
         {/* image */}
         <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
           {/* overlay */}
-         <div></div>
+         <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
           {/*image  */}
-          <img src={Img1}  alt="" />
+          <img className='group-hover:scale-125 transition-all duration-500 '  src= {Img1}  alt="" />
           {/* pretitle */}
-          <div>UI/UX Design</div>
+          <div className='absolute -bottom-full left-12'>UI/UX Design</div>
           {/* title */}
           <div>
             <span>Project Title</span>
